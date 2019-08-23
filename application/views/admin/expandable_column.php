@@ -74,6 +74,10 @@
 									<a href="javascript:;" class="reload"></a>
 									<a href="javascript:;" class="remove"></a>
 								</div>
+								<div class="actions">
+									<a href="/admin_users/add" id="addUser" class="btn yellow"><i class="icon-plus"></i> Add User</a>
+								</div>
+
 							</div>
 							<div class="portlet-body">
 								<table class="table table-striped table-bordered table-hover table-full-width" id="sample_1">
@@ -418,6 +422,9 @@
 		jQuery(document).ready(function() {       
 		   App.init();
 		   TableAdvanced.init();
+		   $("#addUser").click(function(){
+			   console.log("add user invoked");
+		   });
 		});
 	</script>
 </body>
